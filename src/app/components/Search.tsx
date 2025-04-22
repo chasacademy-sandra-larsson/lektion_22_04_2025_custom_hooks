@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useDebounce } from "../hooks/useDebounce";
-import { usePokemon } from "../hooks/usePokemon";
+import  usePokemon  from "../hooks/usePokemon";
 import type { Pokemon } from "../hooks/usePokemon";
 
 export default function Search() {

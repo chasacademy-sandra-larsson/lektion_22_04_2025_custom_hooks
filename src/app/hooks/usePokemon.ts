@@ -15,7 +15,8 @@ export interface Pokemon {
     }>;
 }
 
-
+// Custom hook usePokemon
+const usePokemon = (name: string) => {
     
     const [data, setData] = useState<Pokemon | null>(null);
     const [loading, setLoading] = useState(true);
@@ -43,4 +44,9 @@ export interface Pokemon {
         fetchPokemon();
     }, [name]);
 
-   
+
+    return { data, loading, error };
+
+}
+
+export default usePokemon;

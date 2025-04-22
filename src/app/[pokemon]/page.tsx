@@ -1,6 +1,6 @@
 "use client";
 
-import { usePokemon } from "@/app/hooks/usePokemon";
+import  usePokemon  from "@/app/hooks/usePokemon";
 import type { Pokemon } from "@/app/hooks/usePokemon";
 
 export default function PokemonPage({ params }: { params: { pokemon: string } }) {
